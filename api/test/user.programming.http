@@ -1,0 +1,39 @@
+GET http://localhost:3000/api/user/ HTTP/1.1
+
+###
+
+GET http://localhost:3000/api/user/1 HTTP/1.1
+
+###
+
+POST http://localhost:3000/api/user/ HTTP/1.1
+Content-Type: application/json
+
+{
+        "userName": "Ana",
+        "fullName": "Ana",
+        "description": "Soy Ana",
+        "mail": "ana@ana.com",
+        "profilePic": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+        "password": "ana@ana.com",
+        "userId": 3
+    }
+
+###
+
+PUT http://localhost:3000/api/user/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "userName": "Paco",
+    "fullName": "Paco Peña",
+    "description": "Soy Paco",
+    "mail": "paco@paco.com",
+    "profilePic": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+    "password": "paco@paco.com",
+    "userId": 1
+}
+
+###
+
+DELETE http://localhost:3000/api/user/3 HTTP/1.1
